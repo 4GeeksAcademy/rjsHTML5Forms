@@ -1,9 +1,7 @@
-body{
-    background-color:whitesmoke;
-}
+
 .form{
     display:inline-flex;
-    flex-direction:row;
+ 
     
 }
 .missing{
@@ -11,5 +9,9 @@ body{
     
 }
 .payment{
+    flex-direction:row;
     
+}
+.example p{
+    background-color: rgb(170, 22, 22);
 }
