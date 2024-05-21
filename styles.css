@@ -1,24 +1,65 @@
-
-.document{
+body{
+    margin: auto;
+    width: 500px;
+}
+.header{
     display:flex;   
-    flex-direction:column;
-    align-items:center;
-    border:2px solid black;
+    flex-direction: column;
+    border:2px solid lightgray;
+    
+    height: 600px;
+    left: 0px;
+}
 
-    padding:0px;
+.missing{
+   /* border: solid 2px black;*/
+    background-color: pink;
+    width:450px;
+    height:30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.payment{
+    background-color:rgb(241, 235, 235);
+    width:482px;
+    height:50px;
+    margin-top:0px;
+    margin-bottom: 0px;;
+    padding-left: 10px;
+    padding-top: 0px;
+   /* border: solid 2px black;*/
+}
+.cardInfo{
+    display: flex;
+    flex-direction: row;
+    
+    
     
 }
-.missing {
-    background-color:pink;
-    width:500px;
-    height:50px;
-    margin:0px;
-    align-items:center;
 
+.card{
+    
+    /*border:2px solid black;*/
+    margin-left:10px;
+    width: 140px;
+
+    
 }
-.payment{
-    background-color:gainsboro;
-    width:500px;
-    height:50px;
-    margin:0px;
+.cvc{
+    margin-left: 15px;
+   /* border:2px solid black;*/
+    width: 150px;
+}
+.amount{
+    
+    /*border:2px solid black;*/
+    width: 150px;
+    margin-left: 5px;
+}
+input{
+    width: 145px;
 }
