@@ -1,17 +1,24 @@
 
-.form{
-    display:inline-flex;
- 
+.document{
+    display:flex;   
+    flex-direction:column;
+    align-items:center;
+    border:2px solid black;
+
+    padding:0px;
     
 }
-.missing{
+.missing {
     background-color:pink;
-    
+    width:500px;
+    height:50px;
+    margin:0px;
+    align-items:center;
+
 }
 .payment{
-    flex-direction:row;
-    
-}
-.example p{
-    background-color: rgb(170, 22, 22);
+    background-color:gainsboro;
+    width:500px;
+    height:50px;
+    margin:0px;
 }
