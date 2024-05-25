@@ -2,31 +2,86 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css"/>
+        <script src="https://kit.fontawesome.com/a81c9f2b24.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <form action="https://github https-server" method="post">
-        <div class="header">
-            
-            <p class="payment">Payment Form Example</p>
-            <p class="missing">Some fields are missing</p>
+        <form id="cardpayment" action="https://github https-server" method="post">
+            <div class="header">
+                <p class="payment">Payment Form Example</p>
+                <p class="missing">Some fields are missing</p>
+            <div class="card">
+                <div class="one">
+                <label for="cc" class="two">Card #</label><br>
+                <input class="two" type="text" id="cc" name="cc" value="xxxxxxxxxxx">
+                </div>
+                <div class="two">   
+                <label for="CVC">CVC #</label><br>
+                <input class="two" type="text" id="CVC" name="CVC" value="0000">
+                </div>
+                <div class="three">
+                <label for="amount">Amount</label><br>
+                <span>$</span><input class="two" type="text" id="amount" name="amount" value="Amount">
+                </div>
+            </div>
+            <div class="name">
+                <div class="firstname">
+                    <label for="firstname">Firstname</label><br>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="lastname">
+        
+                    <label for="lastname">Lastname</label><br>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+            </div>
+            <div class="location">
+                <div class="city">
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="state">
+                    <label for="state">State</label><br>
+                    <select name="state" id="state" form="cardpayment">
+                        <option value="Florida">Florida</option>
+                        <option value="California">California</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+                <div class="zipcode">
+                    <label for="zipcode">Zipcode</label><br>
+                    <input type="text" name="zipcode" id="zipcode">
+                </div>
 
-        
-        <div class="cardInfo">
-        <div class="card">
-            <label>Card #</label>
-            <p><input type="text" name="card" value="xxx-xxxx-xxxxx"></p>
-        </div>
-        <div class="cvc">
-            <label>CVC #</label>
-            <p><input type="text" name="cvc" value="0000"></p>
-        </div>
-        <div class="amount">
-            <label>Amount $</label>
-            <p><input type="text" name="amount" value="Amount"></p>
-        </div>
-        
-        </div>
-        </div>
+            </div>
+            <div class="cctypes">
+                <div>
+                    <label for="cctypes">We accept:</label><br>
+                    <div class="icons">
+                        <input type="radio" id="cctypes">
+                        <i class="fa-solid fa-credit-card"></i><span>Visa</span>
+                        <input type="radio" id="cctypes">
+                        <i class="fa-solid fa-credit-card"></i><span>Mcard</span>
+                        <input type="radio" id="cctypes">
+                        <i class="fa-solid fa-credit-card"></i><span>AExpress</span>
+                        
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="4" cols="20"></textarea><br>
+                    <p>Add any notes here.</p>
+                </div>
+            </div>
+            <div class="footer">
+            <div>
+                <input type="submit" value="Cancel">
+                <input type="submit" value="Send">
+                
+            </div>
+            </div>
+            </div>
         </form>
     </body>
 </html>
