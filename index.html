@@ -11,16 +11,16 @@
                 <p class="missing">Some fields are missing</p>
             <div class="card">
                 <div class="one">
-                <label for="cc" class="two">Card #</label><br>
-                <input class="two" type="text" id="cc" name="cc" value="xxxxxxxxxxx">
+                <label for="cc" class="amount">Card #</label><br>
+                <input class="amount" type="text" id="cc" name="cc" value="xxxxxxxxxxx">
                 </div>
-                <div class="two">   
+                <div class="amount">   
                 <label for="CVC">CVC #</label><br>
-                <input class="two" type="text" id="CVC" name="CVC" value="0000">
+                <input class="amount" type="text" id="CVC" name="CVC" value="0000">
                 </div>
                 <div class="three">
                 <label for="amount">Amount</label><br>
-                <span>$</span><input class="two" type="text" id="amount" name="amount" value="Amount">
+                <span>$</span><input class="amount" type="text" id="amount" name="amount" value="Amount">
                 </div>
             </div>
             <div class="name">
@@ -59,25 +59,25 @@
                 <div>
                     <label for="cctypes">We accept:</label><br>
                     <div class="icons">
-                        <input type="radio" id="cctypes">
+                        <input type="radio" id="cctypes" name="cctypes">
                         <i class="fa-solid fa-credit-card"></i><span>Visa</span>
-                        <input type="radio" id="cctypes">
+                        <input type="radio" id="cctypes" name="cctypes">
                         <i class="fa-solid fa-credit-card"></i><span>Mcard</span>
-                        <input type="radio" id="cctypes">
+                        <input type="radio" id="cctypes" name="cctypes>
                         <i class="fa-solid fa-credit-card"></i><span>AExpress</span>
                         
                     </div>
                 </div>
                 <div>
                     <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="4" cols="20"></textarea><br>
+                    <textarea class="message" id="message" name="message" rows="4" cols="20"></textarea><br>
                     <p>Add any notes here.</p>
                 </div>
             </div>
             <div class="footer">
             <div>
-                <input type="submit" value="Cancel">
-                <input type="submit" value="Send">
+                <input class="cancel" type="submit" value="Cancel">
+                <input class="send" type="submit" value="Send">
                 
             </div>
             </div>

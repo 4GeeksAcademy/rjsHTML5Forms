@@ -3,13 +3,14 @@ form{
     display: flex;
     position: absolute;
     left: 200px;
-    width: 900px;  
-    border:solid black 2px;  
+    width: 760px;  
+     
     font-family: cursive;
 }
 .header{
     flex-direction: column;
     border:2px solid lightgray;
+    width: 750px;
 
 }
 
@@ -44,7 +45,7 @@ form{
 .one label{
     margin-left: 10px;
 }
-.two label{
+.amount label{
     margin-left: 10px;
 }
 .one input{
@@ -52,9 +53,10 @@ form{
     margin-left: 10px;
     margin-top: 10px;
 }
-.two input{
+.amount input{
     margin-left: 10px;
-    width: 140px;
+    margin-right: 10px;
+    width: 70%;
     margin-top: 10px;
 }
 .three label{
@@ -81,8 +83,8 @@ form{
     margin-top: 10px;
 }
 .lastname > input{
-    width: 91%;
-    margin-left: 10px;
+    width: 360px;
+    
     margin-top: 10px;
 }
 .firstname > label{
@@ -91,7 +93,7 @@ form{
 }
 .lastname > label{
     
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .location{
     display: flex;
@@ -116,12 +118,14 @@ form{
     margin-left: 10px;
 }
 .zipcode > input{
-    width: 90%;
+    width: 200px;
     margin-left: 10px;
     margin-top: 10px;
+    margin-right: 10px;
 }
 .zipcode > label{
     margin-left: 10px;
+    
     
 }
 .cctypes{
@@ -144,8 +148,24 @@ form{
     margin-right: 60px;
 
 }
+.message{
+    width: 370px;
+}
 .footer{
     background-color: lightgray;
     width: auto;
     height: 40px;
+}
+.footer input{
+    margin-top: 2px;
+    float: right;
+    margin: auto;
+}
+.send{
+    background-color: blue;
+    color: white;
+}
+.cancel{
+    background-color: grey;
+    color: white;
 }
