@@ -157,9 +157,10 @@ form{
     height: 40px;
 }
 .footer input{
-    margin-top: 2px;
     float: right;
-    margin: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+
 }
 .send{
     background-color: blue;
@@ -168,4 +169,9 @@ form{
 .cancel{
     background-color: grey;
     color: white;
+}
+.cctypes fieldset{
+    border: none;
+    width: 100px;
+    margin-left: 0;
 }
