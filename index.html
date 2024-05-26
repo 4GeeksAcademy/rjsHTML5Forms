@@ -6,82 +6,83 @@
     </head>
     <body>
         <form id="cardpayment" action="https://github https-server" method="post">
-        <div class="header">
+            <div class="header">
                 <p class="payment">Payment Form Example</p>
                 <p class="missing">Some fields are missing</p>
-            <div class="card">
-                <div class="one">
-                <label for="cc" class="amount">Card #</label><br>
-                <input class="amount" type="text" id="cc" name="cc" value="xxxxxxxxxxx">
-                </div>
-                <div class="amount">   
-                <label for="CVC">CVC #</label><br>
-                <input class="amount" type="text" id="CVC" name="CVC" value="0000">
-                </div>
-                <div class="three">
-                <label for="amount">Amount</label><br>
-                <span>$</span><input class="amount" type="text" id="amount" name="amount" value="Amount">
-                </div>
-            </div>
-            <div class="name">
-                <div class="firstname">
-                    <label for="firstname">Firstname</label><br>
-                    <input type="text" id="firstname" name="firstname">
-                </div>
-                <div class="lastname">
-        
-                    <label for="lastname">Lastname</label><br>
-                    <input type="text" id="lastname" name="lastname">
-                </div>
-            </div>
-            <div class="location">
-                <div class="city">
-                    <label for="city">City</label><br>
-                    <input type="text" id="city" name="city">
-                </div>
-                <div class="state">
-                    <label for="state">State</label><br>
-                    <select name="state" id="state" form="cardpayment">
-                        <option value="Florida">Florida</option>
-                        <option value="California">California</option>
-                        <option value="Texas">Texas</option>
-                        <option value="New Jersey">New Jersey</option>
-                        <option value="New York">New York</option>
-                    </select>
-                </div>
-                <div class="zipcode">
-                    <label for="zipcode">Zipcode</label><br>
-                    <input type="text" name="zipcode" id="zipcode">
-                </div>
-            </div>
-
-            
-            <div class="cctypes">
-                <div>
-                    <div class="icons">
-                        <input type="radio" id="cctypes" name="cctypes">
-                        <i class="fa-solid fa-credit-card"></i><span>Visa</span>
-                        <input type="radio" id="cctypes" name="cctypes">
-                        <i class="fa-solid fa-credit-card"></i><span>Mcard</span>
-                        <input type="radio" id="cctypes" name="cctypes>
+                <div class="card">
+                    <div class="amount">
+                    <label for="cc" class="amount">Card #</label><br>
+                    <input class="amount" type="text" id="cc" name="cc" value="xxxxxxxxxxx">
                     </div>
-                    <div>
-                    <label for="message">Message</label><br>
-                    <textarea class="message" id="message" name="message" rows="4" cols="20"></textarea><br>
-                    <p>Add any notes here.</p>
+                    <div class="amount">   
+                    <label for="CVC">CVC #</label><br>
+                    <input class="cvc" type="text" id="CVC" name="CVC" value="0000">
+                    </div>
+                    <div class="Amount">
+                    <label for="amount" class="Amount">Amount</label><br><span>$</span>
+                    <input class="amount" type="text" id="amount" name="amount" value="Amount">
                     </div>
                 </div>
+                <div class="name">
+                    <div class="firstname">
+                        <label for="firstname">Firstname</label><br>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname">Lastname</label><br>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                 </div>
+                <div class="location">
+                    <div class="city">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="state">
+                        <label for="state">State</label><br>
+                        <select name="state" id="state" form="cardpayment">
+                            <option value="Florida">Florida</option>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New York">New York</option>
+                        </select>
+                    </div>
+                    <div class="zipcode">
+                        <label for="zipcode">Postal code</label><br>
+                        <input type="text" name="zipcode" id="zipcode">
+                    </div>
+                </div>
+                        <div class="cctypes">
+                            <div>
+                            <label for="cctypes">We accept:</label>
+                            
+                            <div class="icons">
+                                
+                                <input type="radio" id="cctypes" name="cctypes">
+                                <i class="fa-solid fa-credit-card"></i><span>Visa</span>
+                                <input type="radio" id="cctypes" name="cctypes">
+                                <i class="fa-solid fa-credit-card"></i><span>Mcard</span>
+                                <input type="radio" id="cctypes" name="cctypes">
+                                <i class="fa-solid fa-credit-card"></i><span>AEcard</span>
+                            </div>
+                            </div>
 
-            <div class="footer">
-            <div>
-                <input class="send" type="submit" value="Send">
-                <input class="cancel" type="submit" value="Cancel">
+                        <div class="message">
+                            <div>
+                                <label for="message">Message</label><br>
+                                <textarea class="message" id="message" name="message" rows="4" cols="20"></textarea><br>
+                                <p>Add any notes here.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footer">
+                            <div>
+                            <input class="send" type="submit" value="Send">
+                           <input class="cancel" type="submit" value="Cancel">
+                           </div>
+                       </div>
             </div>
-            </div>
-
-            </div>
-        </div>
-    </div>
-    </form>
+        </form>
     </body>
 </html>
